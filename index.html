@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Family Tree Generator</h1>
+
+    
+        <form id="familyForm">
+            <input type="text" id="name" placeholder="Enter Member Name" required>
+            <select id="parent">
+                <option value="">No Parent (Root)</option>
+            </select>
+            <button type="submit">Add Member</button>
+        </form>
+
+        
+        <div id="treeContainer"></div>
+
+       
+        <div class="export-buttons">
+            <button id="exportImage">Export as Image</button>
+            <button id="exportPDF">Export as PDF</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
